@@ -1,11 +1,9 @@
 MIT License
 
 Copyright (c) 2026 ghgjkbf
-
-Portions of the maze generation, bouncing-raycast ballistics, and tank
-motion/semantics are ported from kneasle/tank-trouble (MIT License),
-Copyright (c) kneasle and contributors:
-https://github.com/kneasle/tank-trouble
+Copyright (c) kneasle and contributors (maze generation, bouncing-raycast
+ballistics, and tank motion/semantics ported from
+https://github.com/kneasle/tank-trouble)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
