@@ -1,0 +1,12 @@
+# dsh-tank-game bundle patch: mount the tank game.
+#
+# Applied when this bundle appears in a profile's dsh.profile.bundles list.
+# The host half (package root) owns the HTTP routes under /tank-game/*.
+# The browser half is discovered through the package's `dsh.client` declaration
+# plus `exports["./client"]`; it claims the sidebar rail icon and the main panel.
+#
+# No build step: both halves are hand-written and ship as-is in lib/.
+
+- insert:
+    - id: tank-game
+      name: '@ghgjkbf/dsh-tank-game'

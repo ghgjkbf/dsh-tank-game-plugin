@@ -1,0 +1,49 @@
+{
+  "name": "@ghgjkbf/dsh-tank-game",
+  "version": "0.0.1",
+  "description": "坦克动荡风格俯视迷宫坦克对战：P1 玩家 vs N 台 LLM 驱动 AI，实时弹幕嘲讽、友伤与道具系统。侧栏入口展开独立游戏面板。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "sim": "node tools/sim-accept.mjs",
+    "render:proof": "node tools/render-check.mjs",
+    "verify:bundle": "node tools/verify-bundle.mjs",
+    "verify": "npm run sim && npm run verify:bundle && npm run render:proof"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "game",
+    "tank",
+    "danmaku"
+  ],
+  "license": "MIT"
+}
