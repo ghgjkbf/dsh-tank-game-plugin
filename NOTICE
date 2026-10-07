@@ -1,0 +1,9 @@
+NOTICE
+
+This project includes portions ported from kneasle/tank-trouble
+(https://github.com/kneasle/tank-trouble), MIT License,
+Copyright (c) kneasle and contributors.
+
+The maze generation, bouncing-raycast ballistics, and tank motion/semantics
+derive from that project. This project as a whole is distributed under the
+MIT License; see LICENSE.
