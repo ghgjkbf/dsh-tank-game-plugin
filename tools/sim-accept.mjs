@@ -15,7 +15,7 @@ global.window = {
   },
 }
 new Function(src)()
-assert.strictEqual(captured.id, '@dsh-external/dsh-tank-game')
+assert.strictEqual(captured.id, '@ghgjkbf/dsh-tank-game')
 
 const fakeRequire = (name) => {
   if (name === 'react') {
